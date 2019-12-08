@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CustomerDiscount implements Discounts {
-	public static ConcurrentHashMap<CustomerType, List<Slabs>> discountList = new ConcurrentHashMap<CustomerType, List<Slabs>>();
+	private static ConcurrentHashMap<CustomerType, List<Slabs>> discountList = new ConcurrentHashMap<CustomerType, List<Slabs>>();
 
 	/*
 	 * (non-Javadoc)

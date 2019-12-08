@@ -29,7 +29,7 @@ public class CustomerBillingTest {
 		dis.addDiscountSlabs(new Slabs(0,5000,0), CustomerType.Regular);
 		dis.addDiscountSlabs(new Slabs(5000,10000,10), CustomerType.Regular);
 		dis.addDiscountSlabs(new Slabs(10000,Integer.MAX_VALUE,20), CustomerType.Regular);
-		Assert.assertEquals(5900, bill.calculateFinalBillAmount(6000, CustomerType.Regular));
+		Assert.assertEquals(9500, bill.calculateFinalBillAmount(10000, CustomerType.Regular));
 		
 	}
 	@Test
